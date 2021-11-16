@@ -11,7 +11,24 @@
 		F72818722739B0F400964496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72818712739B0F400964496 /* ContentView.swift */; };
 		F72818742739B0F500964496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72818732739B0F500964496 /* Assets.xcassets */; };
 		F72818772739B0F500964496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72818762739B0F500964496 /* Preview Assets.xcassets */; };
+		F728187E2739B11300964496 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728187D2739B11300964496 /* TriviaManager.swift */; };
+		F728188F2739BAD500964496 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728188E2739BAD500964496 /* Trivia.swift */; };
+		F7A9BD462740232600A13CD0 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A9BD452740232600A13CD0 /* TriviaView.swift */; };
+		F7A9BD4827408C3700A13CD0 /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A9BD4727408C3700A13CD0 /* CategoryHeader.swift */; };
+		F7A9BD4A27408D7700A13CD0 /* AnswerChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A9BD4927408D7700A13CD0 /* AnswerChoice.swift */; };
+		F7DB0BCA273C524300708A66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB0BC9273C524300708A66 /* Result.swift */; };
+		F7DB0BCC273C59C700708A66 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB0BCB273C59C700708A66 /* Options.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72818872739B2FA00964496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72818642739B0F400964496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F728186B2739B0F400964496;
+			remoteInfo = "Trivia Crack";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F728186C2739B0F400964496 /* Trivia Crack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia Crack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +36,25 @@
 		F72818712739B0F400964496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F72818732739B0F500964496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72818762739B0F500964496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F728187D2739B11300964496 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
+		F72818832739B2FA00964496 /* Trivia Crack Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trivia Crack Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F728188E2739BAD500964496 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		F7A9BD452740232600A13CD0 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		F7A9BD4727408C3700A13CD0 /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
+		F7A9BD4927408D7700A13CD0 /* AnswerChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoice.swift; sourceTree = "<group>"; };
+		F7DB0BC9273C524300708A66 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F7DB0BCB273C59C700708A66 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F72818692739B0F400964496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72818802739B2FA00964496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F728186C2739B0F400964496 /* Trivia Crack.app */,
+				F72818832739B2FA00964496 /* Trivia Crack Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +86,9 @@
 			children = (
 				F728186F2739B0F400964496 /* Trivia_CrackApp.swift */,
 				F72818712739B0F400964496 /* ContentView.swift */,
+				F7A9BD422740229200A13CD0 /* Model */,
+				F7A9BD432740229C00A13CD0 /* View */,
+				F7A9BD44274022A300A13CD0 /* ViewModel */,
 				F72818732739B0F500964496 /* Assets.xcassets */,
 				F72818752739B0F500964496 /* Preview Content */,
 			);
@@ -65,6 +101,34 @@
 				F72818762739B0F500964496 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7A9BD422740229200A13CD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F728188E2739BAD500964496 /* Trivia.swift */,
+				F7DB0BC9273C524300708A66 /* Result.swift */,
+				F7DB0BCB273C59C700708A66 /* Options.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7A9BD432740229C00A13CD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7A9BD452740232600A13CD0 /* TriviaView.swift */,
+				F7A9BD4727408C3700A13CD0 /* CategoryHeader.swift */,
+				F7A9BD4927408D7700A13CD0 /* AnswerChoice.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A9BD44274022A300A13CD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F728187D2739B11300964496 /* TriviaManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +151,24 @@
 			productReference = F728186C2739B0F400964496 /* Trivia Crack.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F72818822739B2FA00964496 /* Trivia Crack Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72818892739B2FA00964496 /* Build configuration list for PBXNativeTarget "Trivia Crack Tests" */;
+			buildPhases = (
+				F728187F2739B2FA00964496 /* Sources */,
+				F72818802739B2FA00964496 /* Frameworks */,
+				F72818812739B2FA00964496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72818882739B2FA00964496 /* PBXTargetDependency */,
+			);
+			name = "Trivia Crack Tests";
+			productName = "Trivia Crack Tests";
+			productReference = F72818832739B2FA00964496 /* Trivia Crack Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +181,10 @@
 				TargetAttributes = {
 					F728186B2739B0F400964496 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					F72818822739B2FA00964496 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F728186B2739B0F400964496;
 					};
 				};
 			};
@@ -116,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				F728186B2739B0F400964496 /* Trivia Crack */,
+				F72818822739B2FA00964496 /* Trivia Crack Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +217,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F72818812739B2FA00964496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +233,32 @@
 			files = (
 				F72818722739B0F400964496 /* ContentView.swift in Sources */,
 				F72818702739B0F400964496 /* Trivia_CrackApp.swift in Sources */,
+				F728188F2739BAD500964496 /* Trivia.swift in Sources */,
+				F7A9BD462740232600A13CD0 /* TriviaView.swift in Sources */,
+				F7DB0BCA273C524300708A66 /* Result.swift in Sources */,
+				F728187E2739B11300964496 /* TriviaManager.swift in Sources */,
+				F7A9BD4827408C3700A13CD0 /* CategoryHeader.swift in Sources */,
+				F7DB0BCC273C59C700708A66 /* Options.swift in Sources */,
+				F7A9BD4A27408D7700A13CD0 /* AnswerChoice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F728187F2739B2FA00964496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72818882739B2FA00964496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F728186B2739B0F400964496 /* Trivia Crack */;
+			targetProxy = F72818872739B2FA00964496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F72818782739B0F500964496 /* Debug */ = {
@@ -277,7 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +423,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +434,52 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F728188A2739B2FA00964496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Z6CXGJ35;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesdierkes.Trivia-Crack-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivia Crack.app/Trivia Crack";
+			};
+			name = Debug;
+		};
+		F728188B2739B2FA00964496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Z6CXGJ35;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesdierkes.Trivia-Crack-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivia Crack.app/Trivia Crack";
 			};
 			name = Release;
 		};
@@ -338,6 +500,15 @@
 			buildConfigurations = (
 				F728187B2739B0F500964496 /* Debug */,
 				F728187C2739B0F500964496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72818892739B2FA00964496 /* Build configuration list for PBXNativeTarget "Trivia Crack Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F728188A2739B2FA00964496 /* Debug */,
+				F728188B2739B2FA00964496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
