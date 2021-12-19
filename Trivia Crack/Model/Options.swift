@@ -7,14 +7,14 @@
 
 import Foundation
 
-
+/// Handles the data request to the API.
+/// Allows for easy access to in game modifiers to API.
 public struct Options {
     let questions: Int
     let category: Category
     let difficulty: Difficulty
     let type: Mode
 }
-
 
 public enum Category: String, Decodable {
     case art, sports, history

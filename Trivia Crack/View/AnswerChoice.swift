@@ -22,8 +22,10 @@ struct AnswerChoice: View {
         } label: {
             ZStack{
                 RoundedRectangle(cornerRadius: 8)
-                    .frame(width: 350, height: 40)
+                    .frame(width: 350, height: 65)
                     .foregroundColor(colorStatus())
+
+                
                 Text(answer)
                     .foregroundColor(Color.white)
                     .bold()

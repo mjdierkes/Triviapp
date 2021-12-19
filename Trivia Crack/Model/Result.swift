@@ -7,15 +7,19 @@
 
 import Foundation
 
+
+/// A type to handle the data from the API request. 
 public struct Result: Codable {
-    var question: String
+    public var question: String
     var category: String
     var correct_answer: String
     var incorrect_answers: [String]
     
-    
+    /// Boilerplate code that enables the struct to inherent from Codable.
+    /// Creates a key value pair for each variable.
     private enum CodingKeys : String, CodingKey { case question, category, correct_answer, incorrect_answers}
 
+    /// Custom initializer from Codable. Formates data before it is encoded.
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         question = try container.decode(String.self, forKey: .question).decoded

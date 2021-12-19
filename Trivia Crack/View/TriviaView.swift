@@ -14,49 +14,42 @@ struct TriviaView: View {
     @State private var status: Status = .undetermined
     @State private var selected: String = ""
     @State private var timeRemaining = 100.0
+    @State private var waiting = false
     
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 
     var body: some View {
         VStack(alignment: .center){
             
-            CategoryHeader()
+            CategoryHeader(status: $status, timeRemaining: $timeRemaining, waiting: $waiting)
             
-            if status != .undetermined {
-                ProgressView("", value: timeRemaining, total: 100)
-                    .onReceive(timer) { _ in
-                        if timeRemaining > 0 {
-                            timeRemaining -= 2
-                        }
-                        else {
-                            timeRemaining = 100.0
-                            status = .undetermined
-                            manager.nextQuestion()
-                        }
-                    }
-            }
+            Spacer()
             
             Text(manager.current?.question ?? "Unable to connect to the internet.")
                 .font(.title2).bold()
                 .multilineTextAlignment(.center)
                 .padding()
                  
-
+            Spacer()
             
             ForEach(manager.answers, id: \.self){ answer in
                 AnswerChoice(status: $status, answer: answer)
                     .disabled(status != .undetermined)
             }
             
-            Text(manager.correctAnswer)
-            Spacer()
             Rectangle()
                 .foregroundColor(Color.white)
+                .frame(maxHeight: 60)
                 .onTapGesture {
                     if(status != .undetermined){
                         timeRemaining = 0
                     }
                 }
+                .onLongPressGesture(minimumDuration: .infinity, pressing: { inProgress in
+                    waiting = inProgress
+                   }) {
+                       print("Long pressed!")
+                   }
+            
 
         }
         .environmentObject(manager)

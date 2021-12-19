@@ -30,7 +30,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F71A7D64275FF84E00A0970D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F71A7D56275FF84D00A0970D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F728186C2739B0F400964496 /* Trivia Crack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia Crack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F728186F2739B0F400964496 /* Trivia_CrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia_CrackApp.swift; sourceTree = "<group>"; };
 		F72818712739B0F400964496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,10 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71A7D53275FF84D00A0970D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F71A7D56275FF84D00A0970D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F72818632739B0F400964496 = {
 			isa = PBXGroup;
 			children = (
 				F728186E2739B0F400964496 /* Trivia Crack */,
+				F71A7D53275FF84D00A0970D /* Frameworks */,
 				F728186D2739B0F400964496 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +164,7 @@
 				F72818682739B0F400964496 /* Sources */,
 				F72818692739B0F400964496 /* Frameworks */,
 				F728186A2739B0F400964496 /* Resources */,
+				F71A7D64275FF84E00A0970D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);

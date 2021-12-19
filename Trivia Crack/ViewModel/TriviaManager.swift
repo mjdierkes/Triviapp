@@ -20,6 +20,10 @@ public class TriviaManager: ObservableObject{
     private var trivia: Trivia
     private var question = 0
     
+    private let time = 1000
+    private let generator = UINotificationFeedbackGenerator()
+    private let impact = UIImpactFeedbackGenerator()
+
     public init(){
         trivia = Trivia(results: [Result]())
         loadData()
@@ -40,15 +44,18 @@ public class TriviaManager: ObservableObject{
         else {
             question += 1
         }
+        currentTime = time
         current = trivia.results[question]
         correctAnswer = trivia.results[question].correct_answer
         shuffleAnswers()
     }
     
     public func updateScore(with answer: String) -> Status {
+        impact.impactOccurred()
         if(answer == correctAnswer){
             streak += 1
             score += currentTime * streak
+            generator.notificationOccurred(.success)
             return .correct
         }
         else {
@@ -79,9 +86,7 @@ public class TriviaManager: ObservableObject{
         }
     }
     
-    private func generateURL(from options: Options) -> String {
-        return "https://opentdb.com/api.php?amount=\(options.questions)&category=21&difficulty=\(options.difficulty)&type=\(options.type)"
-    }
+ 
         
 }
 
