@@ -16,6 +16,7 @@ public struct Options {
     let type: Mode
 }
 
+/// Creates modifiers to change the game settings.
 public enum Category: String, Decodable {
     case art, sports, history
 }
