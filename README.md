@@ -1,6 +1,7 @@
 # Triviapp <img align="right" alt="App Icon" width="40px" src="https://github.com/mjdierkes/Triviapp/blob/main/App%20Icon.png" />
+### Enjoy awesome Trivia questions.
 
-Enjoy awesome Trivia questions.
+![Triviapp.png](Triviapp.png)
 
 ### Getting Setup
 To try out the app download the repo and open the Xcode project. Then change the bundle identifier to your domain name. 
