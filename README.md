@@ -67,6 +67,8 @@ public init(from decoder: Decoder) throws {
     question = try container.decode(String.self, forKey: .question).decoded
 }
 ```
+###  Contributing
+Feel free to contribute! This is still a very basic app, but already has a lot of the necessary functionality. 
 
 
 
